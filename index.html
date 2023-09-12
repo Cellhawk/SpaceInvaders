@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Space Invaders-style">
+		<meta name="keywords" content="JavaScript, Space Invaders, Hra, ZTIAp, Projekt">
+		<meta name="author" content="David Holub">
+		<title>Invaders must die</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+	</head>
+	<body>
+		<div id="background"></div>
+   		<canvas id="gameCanvas" width="800" height="500"></canvas>
+   		<script src="javasc/background.js"></script>
+   		<!--<script src="javasc/button.js"></script>-->
+   		<script src="javasc/explosion.js"></script>
+   		<script src="javasc/invader.js"></script>
+   		<script src="javasc/main.js"></script>
+   		<script src="javasc/projectile.js"></script>
+   		<script src="javasc/ship.js"></script>
+		<script>
+     		// Vytvori pozadie.
+            var container = document.getElementById('background');
+            var background = new Background();
+            background.initialise(container);
+            background.start();
+    	</script>
+    	<h1>Invaders Must Die</h1>
+    	<h2>Use arrows or A & D to move around, spacebar to shoot. Enemies get faster each level.</h2>
+	</body>
+</html>
